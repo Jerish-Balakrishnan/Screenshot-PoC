@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'screenshot-poc'`, () => {
+  it(`should have as title 'screenshot-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('screenshot-poc');
+    expect(app.title).toEqual('screenshot-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('screenshot-poc app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('screenshot-app app is running!');
   });
 });
